@@ -17,7 +17,7 @@ export default class extends React.Component {
         <h1>Hello </h1>
         <p> { this.props.bancos.map( (b) => <p>{b.name}</p> ) } </p>
       </div>
-
+      
       { /* Formulario styles */ }
        <style jsx>{`
         .formulario{ background: red}
