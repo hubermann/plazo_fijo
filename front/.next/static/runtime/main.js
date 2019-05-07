@@ -6655,7 +6655,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/Users/hub3r/Exercism/ruby/plazo_fijo_front/.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/gabriel/development/personal/plazo_fijo/front/.next");
       return error;
     }
   };

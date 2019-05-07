@@ -7,16 +7,15 @@ module PlazoFijoApi
 
     get '/bancos' do
       content_type :json
-      bancos = {"bancos" => {
-        'id' => 1 => {'name' => 'Banco Santander','tasa' => '4,5'},
-        'id' => 2 => {'name' => 'Banco Nacion','tasa' => 7},
-        'id' => 3 => {'name' => 'Banco Comafi','tasa' => 5},
-      }
-    }
+      bancos = [
+          {'name' => 'Banco Santander','low' => 5,'soft' => 6,'high' => 7, },
+          {'name' => 'Banco Nacion','low' => 3,'soft' => 5,'high' => 7, },
+          {'name' => 'BBVA','low' => 4,'soft' => 6,'high' => 8, },
+        ]
       bancos.to_json
     end
 
-    
+
 
   end
 end
